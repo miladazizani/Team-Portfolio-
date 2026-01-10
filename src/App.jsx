@@ -1,9 +1,13 @@
+import Service from "./features/services/pages/Service"
 
 function App() {
   return (
-<div>
-
-</div>
+    <>
+    
+    
+      <Service />
+    </>
+    
   )
 }
 
