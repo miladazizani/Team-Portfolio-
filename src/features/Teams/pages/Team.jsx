@@ -8,21 +8,35 @@ const Team = () => {
                 </div>
             </section>
             <section className="h-8/12 w-full grid grid-cols-4 gap-6">
-                <div className="bg-rose-300">
-                    <div>
-                    <img src="./images/milad.jpg" className="h-110 rounded-2xl border-2 border-black " />
-                    <p></p>
+                <div className=" h-120">
+                    <div className="relative group cursor-pointer">
+                    <img src="./images/milad.jpg" className="h-110 rounded-2xl border-2 border-black" />
+                    <p className="absolute inset-0 top-80 text-white overlay-1 bg-[#00000065] text-center rounded-2xl  text-2xl opacity-0  transition-opacity group-hover:opacity-100">Milad Azizani<br/> Machine Learning </p>
+                    
                     </div>
                 </div>
-                <div className="bg-rose-300">
-                    <img src="./images/mojib.jpg" className="h-110 rounded-2xl border-2 border-black " />
+                <div className=" h-120">
+                    <div className="relative group cursor-pointer">
+                    <img src="./images/mojib.jpg" className="h-110 rounded-2xl border-2 border-black" />
+                    <p className="absolute inset-0 top-80 text-white overlay-1 bg-[#00000065] text-center rounded-2xl  text-2xl opacity-0  transition-opacity group-hover:opacity-100">Milad Azizani<br/> Machine Learning </p>
+                    
+                    </div>
                 </div>
-                <div className="bg-rose-300">
-                    <img src="./images/mojib.jpg" className="h-110 rounded-2xl border-2 border-black " />
+                <div className=" h-120">
+                    <div className="relative group cursor-pointer">
+                    <img src="./images/milad.jpg" className="h-110 rounded-2xl border-2 border-black" />
+                    <p className="absolute inset-0 top-80 text-white overlay-1 bg-[#00000065] text-center rounded-2xl  text-2xl opacity-0  transition-opacity group-hover:opacity-100">Milad Azizani<br/> Machine Learning </p>
+                    
+                    </div>
                 </div>
-                <div className="bg-rose-300">
-                    <img src="./images/milad.jpg" className="h-110 rounded-2xl border-2 border-black " />
+                <div className=" h-120">
+                    <div className="relative group cursor-pointer">
+                    <img src="./images/mojib.jpg" className="h-110 rounded-2xl border-2 border-black" />
+                    <p className="absolute inset-0 top-80 text-white overlay-1 bg-[#00000065] text-center rounded-2xl  text-2xl opacity-0  transition-opacity group-hover:opacity-100">Milad Azizani<br/> Machine Learning </p>
+                    
+                    </div>
                 </div>
+    
             </section>
         </main>
     )
