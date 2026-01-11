@@ -9,17 +9,19 @@ const Team = () => {
             </section>
             <section className="h-8/12 w-full grid grid-cols-4 gap-6">
                 <div className="bg-rose-300">
-                    <img src="./images/milad.jpg" className="h-110 rounded border-2 border-black" />
-                    
+                    <div>
+                    <img src="./images/milad.jpg" className="h-110 rounded-2xl border-2 border-black " />
+                    <p></p>
+                    </div>
                 </div>
                 <div className="bg-rose-300">
-                    <img src="./images/mojib.jpg" className="h-110 rounded border-2 border-black" />
+                    <img src="./images/mojib.jpg" className="h-110 rounded-2xl border-2 border-black " />
                 </div>
                 <div className="bg-rose-300">
-                    <img src="./images/mojib.jpg" className="h-110 rounded border-2 border-black" />
+                    <img src="./images/mojib.jpg" className="h-110 rounded-2xl border-2 border-black " />
                 </div>
                 <div className="bg-rose-300">
-                    <img src="./images/milad.jpg" className="h-110 rounded border-2 border-black" />
+                    <img src="./images/milad.jpg" className="h-110 rounded-2xl border-2 border-black " />
                 </div>
             </section>
         </main>
