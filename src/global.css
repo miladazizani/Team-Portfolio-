@@ -8,4 +8,5 @@
     font-family: 'main-font';
     user-select: none;
     scrollbar-width: none;
+    scroll-behavior: smooth;
 }

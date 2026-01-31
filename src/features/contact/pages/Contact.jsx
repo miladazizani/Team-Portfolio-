@@ -3,7 +3,7 @@ import Links from "../components/Links"
 
 function Contact() {
   return (
-    <main className="h-screen">
+    <main id="contact" className="h-screen">
         <Form />
         <Links />
     </main>

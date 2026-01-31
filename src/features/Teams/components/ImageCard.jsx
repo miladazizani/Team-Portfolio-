@@ -1,17 +1,31 @@
-import { Button } from "antd"
+import { Button } from "antd";
 
-const ImageCard = ({name, job, src}) => {
-    return (
-        <div className=" h-120">
-            <div className="relative group cursor-pointer">
-                <img src={src} className="h-110 rounded-2xl border-2 border-black" />
-                <div className="absolute inset-0 top-60 text-white overlay-1 bg-[#00000081] text-center  rounded-b-2xl rounded-t-xl  text-2xl opacity-0 h-50  transition-opacity group-hover:opacity-100 flex flex-col gap-5 justify-center items-center">
-                    <p className="text-2xl font-bold">{name}</p>
-                    <p className="text-xl font-semibold">{job}</p>
-                    <Button className="h-30 w-30 bg-red-600! font-bold!" type="primary">See Profile</Button>
-                </div>
-            </div>
+const ImageCard = ({ name, job, src }) => {
+  return (
+    <div className="w-full max-w-xs">
+      <div className="relative group cursor-pointer overflow-hidden rounded-2xl shadow-lg">
+  
+        <img
+          src={src}
+          alt={name}
+          className="w-full h-80 object-cover rounded-2xl transition-transform duration-500 group-hover:scale-110"
+        />
+
+
+        <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
+          <div className="text-center text-white">
+            <p className="text-2xl font-bold">{name}</p>
+            <p className="text-lg font-medium mb-4">{job}</p>
+            <Button
+              className="bg-red-600 hover:shadow shadow-black border-none hover:bg-red-700 font-bold"
+            >
+              See Profile
+            </Button>
+          </div>
         </div>
-    )
-}
-export default ImageCard
+      </div>
+    </div>
+  );
+};
+
+export default ImageCard;
