@@ -1,4 +1,4 @@
-import React from "react";
+import { motion } from 'framer-motion'
 
 const blogs = [
   {
@@ -41,9 +41,9 @@ const blogs = [
 
 function Blog() {
   return (
-    <main id="blog" className="min-h-screen bg-stone-50 px-6 md:px-12 py-24 text-gray-900">
+    <motion.main id="blog" className="min-h-screen bg-stone-50 px-6 md:px-12 py-24 text-gray-900" initial={{opacity: 0, y: 20}} whileInView={{opacity: 1, y: 0}}>
 
-      <section className="max-w-4xl mb-20">
+      <motion.section className="max-w-4xl mb-20" initial={{opacity: 0, y: 20}} whileInView={{opacity: 1, y: 0}}>
         <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">
           Team Blog
         </h1>
@@ -51,9 +51,9 @@ function Blog() {
           Practical thoughts, real experience, and technical insights
           from our development team.
         </p>
-      </section>
+      </motion.section>
 
-      <section className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <motion.section className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" initial={{opacity: 0, y: 20}} whileInView={{opacity: 1, y: 0}}>
         {blogs.map((blog) => (
           <article
             key={blog.id}
@@ -84,9 +84,9 @@ function Blog() {
             <div className="absolute bottom-0 left-0 h-1 w-0 bg-blue-600 group-hover:w-full transition-all duration-300"></div>
           </article>
         ))}
-      </section>
+      </motion.section>
 
-    </main>
+    </motion.main>
   );
 }
 
